@@ -7,7 +7,7 @@ body {
 }
 
 html {
-  font-family: monospace;
+  font-family: inherit;
 }
 
 h1,
@@ -59,4 +59,12 @@ section + section {
 
 .description::after {
   content: "🤟";
+}
+
+.Experience-Heading {
+  display: inline-block;
+}
+
+.Experience-Subheading {
+  display: inline-block;
 }
