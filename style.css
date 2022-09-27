@@ -19,6 +19,7 @@ h4 {
 
 .fancy {
   padding: 20px;
+  padding-top: 50px;
   text-align: center;
   background-color: lavender;
 }
@@ -73,4 +74,14 @@ section + section {
 .Experience-initial-heading {
   position: relative;
   right: 20px;
+}
+
+.Badge {
+  background-color: rgba(112, 79, 118, 0.794);
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  padding: 10px;
+  font-family: Verdana;
+  text-align: center;
 }
