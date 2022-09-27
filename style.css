@@ -68,3 +68,9 @@ section + section {
 .Experience-Subheading {
   display: inline-block;
 }
+
+.Skills-Heading,
+.Experience-initial-heading {
+  position: relative;
+  right: 20px;
+}
