@@ -41,6 +41,12 @@ section {
   color: blue;
 }
 
+.nav-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .nav:hover {
   color: darkblue;
   background-color: rgb(234, 216, 222);
@@ -104,12 +110,16 @@ section + section {
   body {
     display: block;
     font-size: 1.3em;
-    padding: 39px;
+  }
+
+  .nav-group {
+    flex-direction: row;
+    justify-content: center;
   }
 }
 
 @media screen and (min-width: 992px) {
-  body {
+  html {
     display: block;
     grid-template-columns: 20% 60% 20%;
     font-size: 1.7em;
