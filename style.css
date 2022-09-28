@@ -19,14 +19,15 @@ h4 {
 }
 
 .fancy {
-  padding: 1rem;
-  padding-top: 1rem;
+  padding: 4rem;
+  padding-top: 4rem;
   text-align: center;
   background-color: lavender;
+  position: relative;
 }
 
 .main {
-  max-width: 40rem;
+  max-width: 65ch;
   margin: 0 auto;
   padding: 1rem;
 }
@@ -85,4 +86,16 @@ section + section {
   padding: 0.5rem;
   font-family: Verdana;
   text-align: center;
+}
+
+.heading-group {
+  font-size: 4rem;
+}
+
+.main-heading {
+  font-size: 1em;
+}
+
+.profession-heading {
+  font-size: 0.25em;
 }
