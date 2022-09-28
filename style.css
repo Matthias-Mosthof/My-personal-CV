@@ -24,7 +24,7 @@ h4 {
   text-align: center;
   position: relative;
   background-image: linear-gradient(
-    rgba(109, 31, 255, 0.689),
+    rgba(255, 182, 149, 0.689),
     rgba(255, 255, 255, 0.294)
   );
 }
@@ -36,7 +36,7 @@ h4 {
   text-align: center;
   background-image: linear-gradient(
     rgba(255, 255, 255, 0.294),
-    rgba(109, 31, 255, 0.689)
+    rgba(255, 182, 149, 0.689)
   );
 }
 
@@ -72,7 +72,7 @@ section {
 }
 
 section + section {
-  border-top: 1px solid rgb(195, 195, 247);
+  border-top: 1px solid rgba(255, 182, 149, 0.689);
 }
 
 ::selection {
