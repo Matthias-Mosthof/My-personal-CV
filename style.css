@@ -22,8 +22,22 @@ h4 {
   padding: 4rem;
   padding-top: 4rem;
   text-align: center;
-  background-color: lavender;
   position: relative;
+  background-image: linear-gradient(
+    rgba(109, 31, 255, 0.689),
+    rgba(255, 255, 255, 0.294)
+  );
+}
+
+.Footer {
+  padding: 4rem;
+  padding-top: 4rem;
+  position: relative;
+  text-align: center;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.294),
+    rgba(109, 31, 255, 0.689)
+  );
 }
 
 .main {
