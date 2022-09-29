@@ -59,6 +59,13 @@ section {
 .nav {
   padding: 1rem;
   color: var(--Link-color);
+  transition: background-color 1s ease-in-out;
+}
+
+.nav:focus {
+  transition: var(--Link-second-color);
+  outline-color: var(--Link-second-color);
+  outline-style: dashed;
 }
 
 .nav-group {
