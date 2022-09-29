@@ -94,7 +94,7 @@ section + section {
   color: var(--Link-color);
 }
 
-.description::after {
+.content-wrapper::after {
   content: "🤟";
 }
 
@@ -199,5 +199,17 @@ body {
   body {
     --page-background-color: black;
     --page-text-color: white;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .content-wrapper,
+  .content-wrapper2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 0rem;
+  }
+  .article {
+    margin-top: 4rem;
   }
 }
