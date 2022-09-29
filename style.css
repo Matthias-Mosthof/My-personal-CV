@@ -14,6 +14,7 @@ body {
   --Link-second-color: red;
   --selection-color: lavender;
   --hover-color: darkblue;
+  --hover-color2: rgba(255, 182, 149, 0.689);
 }
 
 h1,
@@ -120,6 +121,14 @@ section + section {
   font-family: Verdana;
   text-align: center;
   border: 3px solid var(--main-color);
+  _transition: background-color 1s;
+  transition: transform 1s, background-color 1s;
+  transform-origin: 100% 0%;
+}
+
+.Badge:hover {
+  background-color: var(--hover-color2);
+  transform: scale(2);
 }
 
 .heading-group {
