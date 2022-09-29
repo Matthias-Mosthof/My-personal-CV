@@ -47,14 +47,10 @@ h4 {
 }
 
 .main {
-  max-width: 65ch;
+  max-width: 100ch;
   margin: 0 auto;
   padding: 1rem;
   color: var(--main-color);
-}
-
-section {
-  margin-top: 2rem;
 }
 
 .nav {
@@ -96,20 +92,6 @@ section + section {
 
 .content-wrapper::after {
   content: "🤟";
-}
-
-.Experience-Heading {
-  display: inline-block;
-}
-
-.Experience-Subheading {
-  display: inline-block;
-}
-
-.Skills-Heading,
-.Experience-initial-heading {
-  position: relative;
-  right: 1rem;
 }
 
 .Badge {
@@ -202,14 +184,24 @@ body {
   }
 }
 
+.article-main-heading {
+  position: relative;
+  left: 1rem;
+}
+
+.article-main-content {
+  margin-top: 2rem;
+}
+
 @media screen and (min-width: 768px) {
-  .content-wrapper,
-  .content-wrapper2 {
+  .article {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 2fr;
+    align-content: center;
     grid-column-gap: 0rem;
   }
-  .article {
+  .content-wrapper,
+  .content-wrapper2 {
     margin-top: 4rem;
   }
 }
