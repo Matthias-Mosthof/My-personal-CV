@@ -113,6 +113,12 @@ section + section {
   transform: scale(2);
 }
 
+#animation {
+  transform-origin: 50% 40%;
+  transition: background-color 2s;
+  transition: 3s ease-in-out;
+}
+
 .heading-group {
   font-size: 4rem;
 }
