@@ -1,3 +1,6 @@
+/***************************************************/
+/* General Styling */
+
 * {
   box-sizing: border-box;
 }
@@ -19,14 +22,140 @@ body {
   --gitter-animation-hover: rgba(255, 170, 149, 0.932);
 }
 
+h1,
+h2,
+h3,
+h4 {
+  font-family: Verdana;
+}
+
+/***************************************************/
+/* Specific Styling */
+
+.heading-group {
+  font-size: 4rem;
+}
+
+.main-heading {
+  font-size: 1em;
+}
+
+.profession-heading {
+  font-size: 0.25em;
+}
+
+.header {
+  padding: 4rem;
+  padding-top: 4rem;
+  text-align: center;
+  position: relative;
+  background: linear-gradient(
+    rgba(255, 182, 149, 0.689),
+    rgba(255, 255, 255, 0.294)
+  );
+}
+
+.Footer {
+  padding: 4rem;
+  padding-top: 4rem;
+  position: relative;
+  text-align: center;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.294),
+    rgba(255, 182, 149, 0.689)
+  );
+}
+
+.main {
+  max-width: 100ch;
+  margin: 0 auto;
+  padding: 1rem;
+  color: var(--main-color);
+}
+
+.nav-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav:hover {
+  color: var(--hover-color);
+  background-color: rgb(234, 216, 222);
+}
+
+.nav:active {
+  color: var(--Link-second-color);
+  background-color: rgb(227, 203, 255);
+}
+
+section + section {
+  border-top: 1px solid rgba(255, 181, 149, 0.689);
+}
+
+::selection {
+  background-color: var(--selection-color);
+  color: var(--Link-color);
+}
+
+.content-wrapper::after {
+  content: "🤟";
+}
+
+/***************************************************/
+/* Animationen */
+
+.Badge {
+  background-color: rgba(112, 79, 118, 0.794);
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  padding: 0.5rem;
+  font-family: Verdana;
+  text-align: center;
+  border: 3px solid var(--main-color);
+  _transition: background-color 1s;
+  transition: transform 1s, background-color 1s;
+  transform-origin: 100% 0%;
+}
+
+.Badge:hover {
+  background-color: var(--hover-color2);
+  transform: scale(2);
+}
+
+#animation {
+  transform-origin: 50% 40%;
+  transition: background-color 2s;
+  transition: 3s ease-in-out;
+}
+
+.nav {
+  padding: 1rem;
+  color: var(--Link-color);
+  transition: background-color 1s ease-in-out;
+}
+
+.nav:focus {
+  transition: var(--Link-second-color);
+  outline-color: var(--Link-second-color);
+  outline-style: dashed;
+}
+
 .gitter-animation {
+  _border: 2px solid black;
   padding: 29px;
-  transition: background-color 1s ease-out, rotate 1s;
+  border: solid 0pc salmon;
+  transform-origin: 0px 50px;
+  transition: background-color 1s ease-out, rotate 1.5s,
+    border-width 0.5s ease-in, transform 1s ease-in;
 }
 
 .gitter-animation:hover {
   background-color: var(--gitter-animation-hover);
-  rotate: 30deg;
+  border-width: 5px;
+  rotate: 60deg;
+  transform: scale(1.3);
 }
 
 div:nth-child(4) {
@@ -145,8 +274,6 @@ div:nth-child(24) {
   left: 0px;
 }
 
-/* Row-3 */
-
 div:nth-child(25) {
   position: absolute;
   top: 120px;
@@ -213,8 +340,6 @@ div:nth-child(25) {
   left: 0px;
 }
 
-/* Row-4 */
-
 div:nth-child(35) {
   position: absolute;
   top: 180px;
@@ -266,8 +391,6 @@ div:nth-child(44) {
   top: 180px;
   left: 540px;
 }
-
-/* Row-5 */
 
 div:nth-child(45) {
   position: absolute;
@@ -322,120 +445,8 @@ div:nth-child(54) {
   left: 540px;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  font-family: Verdana;
-}
-
-.fancy {
-  padding: 4rem;
-  padding-top: 4rem;
-  text-align: center;
-  position: relative;
-  background-image: linear-gradient(
-    rgba(255, 182, 149, 0.689),
-    rgba(255, 255, 255, 0.294)
-  );
-  border: 3px solid black;
-}
-
-.Footer {
-  padding: 4rem;
-  padding-top: 4rem;
-  position: relative;
-  text-align: center;
-  background-image: linear-gradient(
-    rgba(255, 255, 255, 0.294),
-    rgba(255, 182, 149, 0.689)
-  );
-}
-
-.main {
-  max-width: 100ch;
-  margin: 0 auto;
-  padding: 1rem;
-  color: var(--main-color);
-}
-
-.nav {
-  padding: 1rem;
-  color: var(--Link-color);
-  transition: background-color 1s ease-in-out;
-}
-
-.nav:focus {
-  transition: var(--Link-second-color);
-  outline-color: var(--Link-second-color);
-  outline-style: dashed;
-}
-
-.nav-group {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.nav:hover {
-  color: var(--hover-color);
-  background-color: rgb(234, 216, 222);
-}
-
-.nav:active {
-  color: var(--Link-second-color);
-  background-color: rgb(227, 203, 255);
-}
-
-section + section {
-  border-top: 1px solid rgba(255, 181, 149, 0.689);
-}
-
-::selection {
-  background-color: var(--selection-color);
-  color: var(--Link-color);
-}
-
-.content-wrapper::after {
-  content: "🤟";
-}
-
-.Badge {
-  background-color: rgba(112, 79, 118, 0.794);
-  position: absolute;
-  right: 1rem;
-  top: 1rem;
-  padding: 0.5rem;
-  font-family: Verdana;
-  text-align: center;
-  border: 3px solid var(--main-color);
-  _transition: background-color 1s;
-  transition: transform 1s, background-color 1s;
-  transform-origin: 100% 0%;
-}
-
-.Badge:hover {
-  background-color: var(--hover-color2);
-  transform: scale(2);
-}
-
-#animation {
-  transform-origin: 50% 40%;
-  transition: background-color 2s;
-  transition: 3s ease-in-out;
-}
-
-.heading-group {
-  font-size: 4rem;
-}
-
-.main-heading {
-  font-size: 1em;
-}
-
-.profession-heading {
-  font-size: 0.25em;
-}
+/***************************************************/
+/* Responsive Design */
 
 @media screen and (min-width: 786px) {
   body {
